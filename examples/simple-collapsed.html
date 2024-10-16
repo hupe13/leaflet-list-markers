@@ -33,7 +33,7 @@
 	//TODO make example using label option with pop fields
 
 	//inizialize Leaflet List Markers
-	var list = new L.Control.ListMarkers({layer: markersLayer, itemIcon: null});
+	var list = new L.Control.ListMarkers({layer: markersLayer, collapsed: true, itemIcon: null});
 
 	list.on('item-mouseover', function(e) {
 		e.layer.setIcon(L.icon({

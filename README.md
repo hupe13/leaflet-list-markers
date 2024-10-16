@@ -4,8 +4,25 @@ Leaflet List Markers
 #What
 A Leaflet Control for listing visible markers/features in the map
 
-Tested in Leaflet 0.7.1
+Tested in Leaflet <s>0.7.1</s> 1.9.4
 
+This fork:
+
+**Examples**
+
+<ul id="examples">
+<li><a href="https://hupe13.github.io/leaflet-list-markers/examples/simple.html">Simple</a></li>
+<li><a href="https://hupe13.github.io/leaflet-list-markers/examples/simple-collapsed.html">Collapsed</a></li>
+<li> You can use it with WordPress, Leaflet Map and Extensions for Leaflet Map (<a href="https://github.com/hupe13/extensions-leaflet-map-testing">Testing</a>, <a href="https://leafext.de/extra/scrollable-list/">Example</a>)</li>
+</ul>
+
+**Changed**
+
+* scrollable list
+* collapse (only with click)
+* new event: item-click, map update-end
+
+<hr>
 
 #Where
 

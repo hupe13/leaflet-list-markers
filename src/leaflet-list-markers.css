@@ -1,4 +1,3 @@
- 
 .leaflet-container .list-markers {
 	position:relative;
 	float:left;
@@ -8,19 +7,31 @@
 	border-radius: 4px;
 	/*background-color: rgba(0, 0, 0, 0.25);*/
 	background-color: rgba(255, 255, 255, 0.4);
-	z-index:1000;	
+	z-index:1000;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
 	margin-left:10px;
 	margin-top:10px;
-
 	min-width:26px;
 	min-height:26px;
+}
+
+.list-markers-x-y {
+	overflow-y: scroll;
 }
 
 .leaflet-control.list-markers .list-markers-toggle {
 	display: none;
 }
+.leaflet-container .list-markers-collapsed {
+	overflow: hidden;
+}
 .leaflet-control.list-markers.list-markers-collapsed .list-markers-toggle {
+	display: block;
+}
+.leaflet-control.list-markers .leaflet-control-layers-toggle {
+	display: none;
+}
+.leaflet-control.list-markers.list-markers-collapsed .leaflet-control-layers-toggle {
 	display: block;
 }
 .list-markers-ul {
@@ -30,20 +41,23 @@
 	margin: 0;
 }
 .list-markers-li {
+	display: flex;
+	justify-content: space-between;
 	padding: 0;
 	margin: 0;
-	clear: both;	
+	clear: both;
 	border-bottom: 1px solid #666;
 }
-.list-markers-li:first-child {
+/* .list-markers-li:first-child {
 	border: none;
-}
+} */
 .list-markers-li img {
 	float: left;
 	width: 12px;
 	height: 20px;
 	margin-right: 4px;
 }
+
 .list-markers-li b {
 	float: right;
 }
@@ -54,13 +68,13 @@
 	display: block;
 	float: left;
 	line-height: 20px;
-	width: 120px;
+	/* width: 120px; */
 	overflow: hidden;
 	margin: 1px;
 	padding: 2px 4px;
 	border-radius: 4px;
 	font-size: 14px;
-	color: #666;	
+	color: #666;
 	text-decoration: none;
 }
 .list-markers-li a:hover {
@@ -80,16 +94,13 @@
 	float:left;
 	width:26px;
 	height:26px;
-	background: url('../images/list-icon.png') no-repeat 2px 2px;
+	/* background: url('../images/list-icon.png') no-repeat 2px 2px; */
 	border-radius:4px;
 }
-.list-markers .list-markers-toggle:hover,
+/* .list-markers .list-markers-toggle:hover,
 .list-markers .list-markers-toggle.active:hover {
 	background: url('../images/list-icon.png') no-repeat 2px -24px #fff;
 }
 .list-markers .list-markers-toggle.active {
 	background: url('../images/list-icon.png') no-repeat 2px -50px #fff;
-}
-
-
-
+} */
