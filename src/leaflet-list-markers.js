@@ -64,8 +64,10 @@
 								map.once(
 									"update-end",
 									function (e) {
-										// console.log( "once update-end" );
-										map.setView( center );
+										// console.log( "once update-end", mapupdate );
+										if (mapupdate) {
+											map.setView( center );
+										}
 									}
 								);
 							}
@@ -109,6 +111,7 @@
 					a,
 					'click',
 					function (e) {
+						mapupdate = false;
 						//this._moveTo( layer.getLatLng() );
 						that.fire( 'item-click', {layer: layer } );
 					},
