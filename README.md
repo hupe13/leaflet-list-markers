@@ -48,4 +48,7 @@ var map = new L.Map('map', { listMarkersControl: {layer: markersLayer} });
 
 * <a href="https://hupe13.github.io/leaflet-list-markers/examples/simple.html">Simple</a> (Stefano Cudini), <a href="examples/simple.html">Code</a>
 * <a href="https://hupe13.github.io/leaflet-list-markers/examples/simple-collapsed.html">Collapsed</a>, <a href="examples/simple-collapsed.html">Code</a>
+
+## WordPress
+
 * You can use it with WordPress, [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) and [Extensions for Leaflet Map](https://wordpress.org/plugins/extensions-leaflet-map/) - <a href="https://leafext.de/en/listmarker/listmarker/">Example</a>
